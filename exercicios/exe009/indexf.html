@@ -1,0 +1,421 @@
+!doctype html>
+<html lang="pt-br">
+<head>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SET_Framework®</title>
+<link rel="icon" type="image/png" href="imagens/ico_wfs.png" />
+<link rel='apple-touch-icon' href="imagens/ico_wfs.png"/>
+
+<link rel="stylesheet" type="text/css" href="/set_framework_web/ext_js/resources/css/ext-all.css" />
+
+<script data-ad-client="ca-pub-9185672020595486" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script src="/set_framework_web/ext_js/adapter/ext/ext-base.js"></script>
+    <meta name="description" content="SET_Framework - Desenvolva voce mesmo o sistema da sua empresa ou pessoal." />
+    <meta name="author" content="WFS Software®" />
+    <meta name="keywords" content="paf, tef, sites, sistemas, automacao comercial, redes, software" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css' />
+    
+ 	<!--   
+    
+    <link rel="stylesheet" href="bigvideo/css/bigvideo.css">
+    -->
+    <link rel="stylesheet" href="bigvideo/css/style.css">
+    <script src="bigvideo/js/modernizr-2.5.3.min.js"></script>
+
+	
+	<script>
+					
+	</script>
+    
+    
+<script src="/set_framework_web/ext_js/adapter/ext/ext-base.js"></script>
+
+<script src="/set_framework_web/ext_js/ext-all-debug.js"></script>
+
+<script type="text/javascript" src="loginnovo.js"></script>
+<script type="text/javascript" src="recuperar.js"></script>
+
+
+    <!--[if lte IE 8]>
+    <style>
+        /* Rotation of the arrow element for IE < 9 */
+        .next-icon { /* IE Matrix Calculator - http: //www.boogdesign.com/examples/transforms/matrix-calculator.html */;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678,sizingMethod='auto expand')";
+            filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678,sizingMethod='auto expand');
+        }
+    </style>
+    <![endif]-->
+
+<script type="text/javascript">
+	    MSGGeral = '<div style="text-align: center;"><img style="width: 620px; height: 220px;" alt="SET_Framework" src="imagens/banner_set_framework_1.jpg"></div>';
+</script>
+
+
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    $('.color-row li').each(function() {
+      var color = $(this).text();
+      $(this).css('background-color', color);
+      $(this).find('span')
+          .css('color', color)
+          .text(color.toUpperCase());
+    });
+    
+  });
+</script>
+
+
+</head>
+
+<!--
+<script type="text/javascript">
+endereco = "http://img42.imageshack.us/img42/5508/neve1.png";
+</script>
+
+<script type="text/javascript" src="neves.js"></script>
+-->
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'> </body>
+
+
+
+<body>
+
+
+
+<style>
+* {
+  margin:  0; 
+  padding: 0; 
+  
+  font-family: "Lucida Sans Unicode", sans-serif;
+  color: rgb(0,0,0);
+}
+
+#ribbon {
+  position: absolute;
+  width:100%;
+  height:5em;
+  top:0;
+  background-color:#424a52;
+  border-bottom:1px solid #424a52;
+  box-shadow: 0  1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #424a52, 0 10px 1px -4px  rgba(0, 0, 0, 0.15), 0 20px 0 -10px #424a52, 0 20px 1px -9px rgba(0, 0,  0, 0.15);
+}
+
+.chunk {
+  width: 10%;
+  display: block;
+  float: left;
+  position: relative;
+}
+
+#ribbon .filler {
+  cursor:pointer;
+  height: 1em;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  -webkit-transition: height .5s; /* Webkit */
+     -moz-transition: height .5s; /* Firefox 4 */
+       -o-transition: height .5s; /* Opera */
+          transition: height .5s; /* W3C Recommendation */
+}
+
+#ribbon .filler:hover {
+    height:2.5em;
+}
+   
+#swatches  { position:relative; margin:10em 10em 0 5em;}
+
+.color-row-container {
+  line-height: 0; /* to remove more top space in FF for -moz-box elements */
+}
+ 
+.color-row-container + .color-row-container {
+  margin-top: -10px !important;
+}
+
+.color-row {
+  width:100%;
+  min-width:350px;
+  margin:0;
+  
+  display: -webkit-box;
+  display:    -moz-box;
+  display:         box;
+  
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  
+  cursor: pointer;
+  
+  -webkit-user-select: none;
+  user-select: none;
+  /* nested user-select in FF is broken as of Jan 2012, don't use it */
+}
+ 
+ 
+.color-row li {
+  margin-left: 0 !important;
+  position: relative;
+  list-style-type: none;
+  height: 80px;
+  display: block;
+  
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+}
+
+.color-row li:before {
+  display: none;
+}
+
+.color-row li.thin {
+  height: 40px;
+}
+
+.color-row li span {
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -2.5em;
+  width:5em;
+  background-color: #fff;
+  padding: 10px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+  cursor: text;
+  z-index:100;
+  -webkit-user-select: text;
+  user-select: text;
+  /* nested user-select in FF is broken as of Jan 2012, don't use it */
+}
+ 
+.color-row li:hover span {
+  display: block;
+}
+ 
+/* triangle callout */
+.color-row li span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  border: 8px solid transparent;
+  border-top-color: #fff;
+  width: 0;
+  height: 0;
+  margin-left: -8px;
+}
+
+h1 { margin-left:1.2em; margin-top:-1em;}
+
+.a {
+   color: rgb(0,0,0);
+}
+</style>
+
+<style>
+
+body {
+ padding:10px 0px 100%; 
+ background: url('http://s15.postimage.org/veanrmv0r/purty_wood_3.png');
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+ font-weight: 300;
+}
+
+
+</style>
+
+
+<style>
+
+html { width: 100%; height: 100%; overflow: hidden; }
+body {  
+  background-color: rgb(91,78,47);
+  @include filter-gradient(#5b4e2f, #8a724c, horizontal);
+  @include background-image(radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,1) 10%,rgba(138,114,76,0) 40%),radial-gradient(30% 30%, ellipse cover, rgba(205,184,141,.5) 10%,rgba(138,114,76,0) 40%),radial-gradient(110% 30%, ellipse cover, rgba(205,184,141,.5) 10%,rgba(138,114,76,0) 40%),radial-gradient(100% 100%, ellipse cover, rgba(166,98,28,1) 0%,rgba(138,114,76,0) 99%),radial-gradient(0% 30%, ellipse cover, rgba(91,78,47,1) 0%,rgba(138,114,76,1) 80%));
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+img { max-width: 100%; vertical-align: sub; }
+*, :before, :after { @include box-sizing(border-box); }
+.clearfix { zoom: 1; }
+.clearfix:before, .clearfix:after { content: '.'; display: block; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0; width: 0; height: 0; }
+.clearfix:after { clear: both; }
+
+a { 
+      text-decoration: none; 
+}
+
+.twitter {
+  background: #f7f5f3;
+  width: 300px;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.7);
+  @include box-shadow(0 0 5px rgba(0,0,0,0.4));
+  header {
+    border-radius: 5px 5px 0 0;
+    height: 100px; 
+    background: #555;
+    @include box-shadow(inset 0 1px 2px rgba(255,255,255,0.5),inset 0 1px 6px rgba(255,255,255,0.3),inset 0 -1px 0px rgba(255,255,255,0.1));
+  }
+  .avatar {
+    width: 48px;
+    padding: 4px;
+    border-radius: 3px;
+    background: #fff;
+    margin: 25px 10px 25px 25px;
+    float: left;
+  }
+  .user-info {
+    float: left;
+    margin: 25px 0;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0,0,0,1);
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .location {
+      margin-top: 5px;
+      font-size: .8125em;
+    }
+  }
+  .stats {
+    zoom: 1;
+    .stat {
+      @include box-shadow(1px 0 0 rgba(0,0,0,0.11),2px 0 1px rgba(255,255,255,1));
+      &:last-child {
+        @include box-shadow(none); 
+      }
+      width: 31%;
+      margin: 20px 1%;
+      float: left;
+      text-align: center;
+      text-shadow: 1px 1px 1px rgba(255,255,255,1);
+      span {
+        display: block; 
+      }
+      .count { 
+        font-weight: 800;
+        color: #666;
+      }
+      .title {
+        color: #9b9b9b;
+        font-size: 0.75em; 
+        
+      }
+    }
+  }
+}
+
+.btn {
+    background-color: rgb(114,177,215);
+    @include filter-gradient(#72b1d7, #3b7ba2, vertical);
+    @include background-image(linear-gradient(top,  rgba(114,177,215,1) 0%,rgba(59,123,162,1) 100%));
+    border: 1px solid #22658e;
+    border-radius: 4px;
+    width: 85%;
+    display: block;
+    margin: 0 auto 20px;
+    padding: 8px 0;
+    text-align: center;
+    font-size: .8125em;
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+    @include box-shadow(inset 0 1px 2px rgba(255,255,255,0.5), 0 2px 2px rgba(0,0,0,0.2));
+    &:hover {
+      @include filter-gradient(#72b1d7, #346c8e, vertical);
+      @include background-image(linear-gradient(top, rgba(114,177,215,1) 0%,rgba(52,108,142,1) 100%));    
+    }
+    &:active {
+      @include box-shadow(inset 0 2px 2px rgba(0,0,0,0.2));
+      @include filter-gradient(#346c8e, #72b1d7, vertical);
+      @include background-image(linear-gradient(top, rgba(52,108,142,1) 0%,rgba(47,99,127,1) 100%));
+    }
+  }
+
+.form {  
+  width: 300px;
+  margin: 20px auto;
+  position: relative;
+
+}
+
+#input::-webkit-input-placeholder { color: #999; }
+
+.btn-create {  
+  @include box-shadow(inset 0 1px 2px rgba(255,255,255,0.5));
+  border-radius: 0 3px 3px 0;
+  display: inline-block;
+  width: auto;
+  height: 28px;
+  padding: 5px 10px; 
+  margin: 0;
+  position: absolute; 
+  top: 0; 
+  right: 0;
+}
+
+
+</style>
+
+
+<style>
+	body {
+	   margin-top: 0;
+	   background: url("imagens/logo_wfs_registrada.png") no-repeat center center fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-color: transparent;
+	}
+</style>
+
+<div id="ribbon">
+    <div class="chunk">&nbsp;<span class="filler" style="background:#09c"></span></div>
+    <div class="chunk">&nbsp;<span class="filler" style="background:#93c"></span></div>
+    <div class="chunk">&nbsp;<span class="filler" style="background:#690"></span></div>
+    <div class="chunk">&nbsp;<span class="filler" style="background:#f80"></span></div>
+    <div class="chunk">&nbsp;<span class="filler" style="background:#c00"></span></div>
+    <div class="chunk">&nbsp;<span class="filler" style="background:#33b5e5"></span></div>
+    <div class="chunk">&nbsp;<span class="filler" style="background:#a6c"></span></div>
+    <div class="chunk">&nbsp;<span class="filler" style="background:#9c0"></span></div>
+    <div class="chunk">&nbsp;<span class="filler" style="background:#fb3"></span></div>
+    <div class="chunk">&nbsp;<span class="filler" style="background:#f44"></span></div>
+
+         <marquee behavior="scroll"  scrolldelay=300 height=50 width=100% style="text-align:center;" direction="up" onmouseover="this.stop()" scrollamount="1" onmouseout="this.start()">
+         <a>
+		   <br><br><br><br><br><br>Sistema para Vendedores via SMS<br><br>SMS Marketing, visite http://meusms.com<br><br>Integre envio de SMS em seus aplicativos ou site com meuSMS.com<br><br><br><br><br><br><br><br>		 </a>
+
+</div>
+
+
+
+<script type="text/javascript">
+setInterval(function(){redirect()},1200000);
+function redirect(){
+              document.location = 'http://www.wfssoftware.com.br';
+}
+</script>
+
+</body>
+</html>

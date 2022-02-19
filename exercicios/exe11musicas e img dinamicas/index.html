@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em HTML5</title>
+<!--obs- play musica-->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>HTML5 Vídeo</title> <!--obs-->
+    <meta charset="utf-8" />
+</head>
+<body>
+    <H1>Imagens Dinâmicas</H1>
+    <p>Tente abrir esse site em varios dispositvos diferentes ou simplismente ou aumente e diminua o tamanho do seu navegador. </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="img/foto01.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto02.png" type="image/png">
+        <img src="img/foto03.png" alt="grande">
+<!--imagens para varios aparelhos-->
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reprodizir audos em HTML5</p>
+    <!--<audio src="midia/01euvialuabrilhar.mp3" autoplay controls ></audio>
+    Essa forma ñ ficou legal. formato compatives: MP3, WAV e OGG -->
+    <!--<audio preload="auto">
+        <source src="midia/seforamor.mp3" type="audio/mpeg" autostart="true">
+    </audio>
+    <br>
+    <embed height="60" type="audio/mpeg" width="144" src="midia/seforamor.mp3" volume="60" loop="true" autostart="true" /><br>
+    <audio controls autoplay autostart="true">
+<source src="midia/seforamor.mp3" type="audio/mpeg">
+</audio><br /> -->
+
+
+<!-- <audio controls autoplay preload="metadata" style="width:300px;">
+	<source src="midia/01euvialuabrilhar.mp3" type="audio/mpeg">
+	</audio> -->
+    <!--<div>
+        <button onclick="document.getElementById('autoplay').play()">Play</button>
+        <button onclick="document.getElementById('autoplay').pause()">Pause</button>
+        <button onclick="document.getElementById('autoplay').volume+=0.1">Aumentar volume</button>
+        <button onclick="document.getElementById('autoplay').volume-=0.1">Diminuir volume</button>
+      </div>
+  
+      <audio id="autoplay" autoplay="autoplay" controls="controls">
+        <source src="midia/01euvialuabrilhar.mp3" type="audio/mp3" />
+        seu navegador não suporta HTML5
+      </audio>
+      <br>
+      <br>
+      <audio src="midia/seforamor.mp3">
+        <p>Seu nevegador não suporta o elemento audio.</p>
+        </audio>
+        <br>
+        <br>
+        <audio src="01euvialuabrilhar.mp3" controls autoplay loop>
+            <p>Seu navegador não suporta o elemento audio </p>
+            </audio>
+            -->
+            <audio controls="controls" autoplay="autoplay"  loop="loop" src="01euvialuabrilhar.mp3" preload="auto"></audio>
+           <!--muted="muted"-->
+
+           <br><br>
+           <script>
+			document.addEventListener("DOMContentLoaded", function(){
+				var audio = document.getElementById("audio");
+				
+				document.getElementById("play").addEventListener("click", function(){
+					audio.play();
+					console.log("Play");
+				}, false);
+				
+				document.getElementById("pause").addEventListener("click", function(){
+					audio.pause();
+					console.log("pause");
+				}, false);
+				
+				document.getElementById("volume").addEventListener("mousemove", function(){
+					var volume = document.getElementById("volume").value;
+					audio.volume = volume;
+					console.log(volume);
+				}, false);
+				
+			}, false);
+		</script>
+	</head>
+	<body>
+		<audio controls="controls" id="audio">
+		  <source src="01euvialuabrilhar.mp3" type="audio/mpeg">
+		  <source src="midia/seforamor.mp3" type="audio/mpeg">
+		  Seu navegador não tem suporte a Tag Audio.
+		</audio>
+		<br />
+		<button id="play">Play</button>
+		<button id="pause">Pause</button>
+		Volume: <input type="range" id="volume" min="0.0" max="1" value="0.5" />
+
+        
+</body>
+</html>
