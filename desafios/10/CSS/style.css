@@ -26,9 +26,10 @@ padding: 0;
 }
 
 header{
-    height: 150px;
+    height: 151px;
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     right: auto;
+    z-index: 200;
 }
 
 header>h1 {
@@ -47,6 +48,9 @@ header>h3{
     color: white;
     font-size: 18px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
     
     
    
