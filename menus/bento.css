@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    
+}
+  
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    letter-spacing: 3px;
+   
+    
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+    margin-right: 32px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+  }
+
+  #btn-mobile {
+    display: none;
+  }
+
+  .bento {
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+    margin: 1px;
+    }
+
+  .menu-bento {
+      display: flex;
+      width: 25px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center ;
+  }  
+
+
+
+  @media (max-width: 1000px) {  
+
+    #menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        right: 0;
+        top: 10vh;
+        background: black;
+        z-index: 1000;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: all 0.6s ease;
+        
+      }
+    
+      header {
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 200;
+        width: 100%;}
+
+       
+    
+      #nav.active #menu {
+        height: calc(101vh - 50px);
+        visibility: visible;
+        overflow-y: auto;
+        
+        
+      }
+      #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+      
+        
+        /*border-bottom: 2px solid white;*/
+       
+      }
+      #menu a:hover {
+        padding-left: 10px;
+        transition: all 0.3s ease;
+        background: scroll;
+         }
+    
+    
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    
+      }
+
+      #nav.active .bento:nth-child(2),
+      #nav.active .bento:nth-child(4),
+      #nav.active .bento:nth-child(6),
+      #nav.active .bento:nth-child(8) {
+  opacity: 0;
+}
+}
