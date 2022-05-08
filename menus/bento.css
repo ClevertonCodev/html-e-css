@@ -60,11 +60,11 @@ header {
         position: fixed;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        
         width: 100%;
         right: 0;
-        top: 10vh;
         background: black;
+        padding-top: 10%;
         z-index: 1000;
         height: 0;
         visibility: hidden;
