@@ -1,0 +1,624 @@
+@charset "UTF-8";
+* {
+margin: 0;
+padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200&display=swap');
+
+:root {
+  --corbody:#0d1323;
+  --coruser:#5746ea;
+  --cordivs: #1d204b;
+  --corsalmao: #ff8b64;
+  --corturquesa: #55c3e6;
+  --acarrosa:  #ff5e7d;
+  --acarverde:  #4bcf81;
+  --acarroxo:  #7235d1;
+  --acaramarelo:  #f1c75b;
+   }
+
+
+body{
+    overflow-x: hidden;
+    line-height: 1.5;
+    background: var(--corbody);
+}
+
+main p {
+    font-size: 16px;
+    text-align: justify;
+    font-size: 18px;
+    text-indent: 30px;
+    line-height: 1.5em;
+    
+    }
+    
+    
+ main{
+      margin-top: 5rem; 
+      width: 100%;
+      margin-bottom: 1px;
+      margin-right: auto;
+      margin-left: auto;
+      overflow-x: hidden;
+      margin-bottom: auto;
+        
+        
+     
+ }
+
+ .container{
+     position: relative;
+     font-family: 'Montserrat', sans-serif;
+     display: flex;
+     overflow: hidden;
+     margin-left: auto;
+     margin-right: auto;
+     height: 31rem;
+     width: 65rem;
+     
+     
+     
+ }
+
+
+
+ .user {
+     display: flex;
+     flex-direction: column;
+     height: 95.1%;
+     width: 270px;
+     background-color: var(--cordivs);
+     z-index: 1000;
+     border-radius: 10px;
+     font-family: 'Montserrat', sans-serif;
+     color: #bbbbbb;
+     text-transform: white;
+     margin-left: 2.5%;
+    
+     
+     
+ }
+
+ .user h4 {
+    margin-top: 15px;
+    margin-left: 30px;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+ }
+ .Jeremy{
+    max-width: 70px; 
+    max-height: 70px;
+    border: solid white 3px;
+    border-radius: 100%;
+    margin-left: 30px;
+    margin-top: 30px;
+
+ }
+ .userb {
+     height: 20rem;
+     width: 100%;
+     background-color:var(--coruser);
+     border-radius: 10px;
+     color: white;
+     
+     
+ } 
+
+ .userb  h6, h1 {
+    margin-left: 30px;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+ }
+
+#h6 {
+    margin-top: 15px;
+}
+
+.user > h4:hover {
+    color: white;
+}
+
+.caixa {
+    height: 100%;
+    width: 65rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    
+    
+  
+}
+    
+.work{
+
+    height: 38%; 
+    width: 230px;
+    background-image: url("time-tracking-dashboard-main/images/icon-mala.svg"); 
+    background-repeat: no-repeat;
+    background-color: var(--corsalmao);
+    background-position: left 90% top -4%  ;
+    background-size: 25%; 
+    border-radius: 10px;
+    margin-left: 25px;
+         
+}
+
+
+.Play{
+
+    height: 38%; 
+    width: 230px;
+    background-image: url("time-tracking-dashboard-main/images/icon-play.svg"); 
+    background-repeat: no-repeat;
+    background-color:#55c3e6 ;
+    background-position: left 90% top -4%  ;
+    background-size: 25%; 
+    border-radius: 10px;
+    margin-left: 25px;
+         
+}
+
+
+.Study{
+
+    height: 38%; 
+    width: 230px;
+    background-image: url("time-tracking-dashboard-main/images/icon-study.svg"); 
+    background-repeat: no-repeat;
+    background-color:var(--acarrosa) ;
+    background-position: left 90% top -4%  ;
+    background-size: 25%; 
+    border-radius: 10px;
+    margin-left: 25px;
+         
+}
+
+.Exercise{
+
+    height: 38%; 
+    width: 230px;
+    background-image: url("time-tracking-dashboard-main/images/icon-exercise.svg"); 
+    background-repeat: no-repeat;
+    background-color:var(--acarverde) ;
+    background-position: left 90% top -1%  ;
+    background-size: 25%; 
+    border-radius: 10px;
+    margin-left: 25px;
+         
+}
+
+.Social{
+
+    height: 38%; 
+    width: 230px;
+    background-image: url(time-tracking-dashboard-main/images/icon-social.svg); 
+    background-repeat: no-repeat;
+    background-color:var(--acarroxo) ;
+    background-position: left 90% top -9%  ;
+    background-size: 25%; 
+    border-radius: 10px;
+    margin-left: 25px;
+         
+}
+
+.Self{
+
+    height: 38%; 
+    width: 230px;
+    background-image: url("time-tracking-dashboard-main/images/icon-self-care.svg"); 
+    background-repeat: no-repeat;
+    background-color:var(--acaramarelo) ;
+    background-position: left 90% top -7%  ;
+    background-size: 25%; 
+    border-radius: 10px;
+    margin-left: 25px;
+         
+}
+
+
+
+.workb{
+    height: 12rem;
+    width: 100%;
+    background-color: var(--cordivs);
+    margin-top: 33px;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+ 
+#pontob{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 84%;
+    color: white;
+    margin-bottom: 1%;
+   
+}
+
+.workb > h5, h3{
+    margin-top: 20px;
+    margin-left: 30px;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: bolder;
+    height: 3px;
+}
+
+.workb  p {
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.workb h4 {
+    margin-bottom: 30px;
+    color: #bbbbbb;
+    margin-left: 30px;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    
+}
+
+@media (max-width: 999px)
+{
+
+main {
+    margin-bottom: 25%;
+}
+
+.container{
+    position: relative;
+    height: 68em;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    
+    
+}
+
+.work{
+
+    height: 22%;
+    margin-left: 9%;
+    width: 41.5%; 
+         
+}
+
+.Play{
+
+    height: 22%; 
+    width: 41.5%; 
+  
+         
+}
+
+
+.Study{
+
+    height: 22%; 
+    width: 41.5%;
+    margin-left: 9%;   
+    
+         
+}
+
+.Exercise{
+
+    height: 22%; 
+    width: 41.5%; 
+         
+}
+
+.Social{
+
+    height: 22%; 
+    width: 41.5%; 
+    margin-left: 9%;
+    
+         
+}
+
+.Self{
+
+    height: 22%; 
+    width: 41.5%; 
+    
+         
+}
+
+.user {
+
+    background-color: var(--cordivs);
+    align-items: center;
+    height: 34%;
+    flex-direction: row;
+    width: 71%;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.userb{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.userc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left:auto ;
+}
+
+
+.caixa {
+    
+    margin-top: 20px;
+    width: 87%;
+    padding-right: 5%;
+  
+   
+    
+}
+
+.Jeremy, h1{
+    max-width: 60%; 
+    max-height: 60%;
+    margin-left: 1px;
+    margin-right: 1px;
+    text-align: center;
+    font-size: 130%;
+
+}
+#h6 {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+}
+
+@media (max-width: 580px){
+
+    .user {
+
+        background-color: var(--cordivs);
+        height: 14%;
+        width: 71%;
+        align-items: stretch;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+    }
+    
+    .userb{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 67%;
+        margin: auto;
+        
+      
+    }
+
+    #h6 {
+        display: block;
+        margin: auto;
+        margin-bottom: 20%;
+        margin-right: 14%;
+
+    }
+    .user h4 {
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+        margin-left: 2%;
+        
+    }
+
+    .userc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       
+    }
+    
+    
+    .caixa {
+        
+        margin-top: 20px;
+        width: 87%;
+        padding-right: 5%;
+      
+       
+        
+    }
+    
+    .Jeremy {
+        max-width: 70%; 
+        max-height: 70%;
+        margin: auto;
+        margin-bottom: 10%;
+        
+    
+    }
+
+    #h1 {
+        margin-top: 8%;
+        margin-left: -38%;
+        margin-right: 6%;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center;
+        font-size: 125%;
+
+    }
+
+
+}
+
+@media (max-width: 480px){
+    .Jeremy {
+        max-width: 60%; 
+        max-height: 60%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+
+
+    #h1 {
+        margin-top: 8%;
+        margin-left: -38%;
+        margin-right: 6%;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center;
+        font-size: 125%;
+
+    }
+
+    .caixa {
+       
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden; 
+        flex-direction: column;}
+
+    
+    #h6 {
+        display: block;
+        margin: auto;
+        margin-bottom: 20%;
+        margin-right: 14%; }
+
+
+        .work {
+            height: 10%;
+            margin-left: 9%;
+            width: 87.5%;
+            
+        }
+
+        .workb{
+            height: 98%;
+            width: 100%;
+            display: block;
+            
+}
+
+.Play{
+
+    height: 10%;
+    margin-left: 9%;
+    width: 87.5%;
+    margin-top: 54px;
+  
+         
+}
+
+
+.Study{
+
+    height: 10%;
+    margin-left: 9%;
+    width: 87.5%; 
+    margin-top: 54px;  
+    
+         
+}
+
+.Exercise{
+
+    height: 10%;
+    margin-left: 9%;
+    width: 87.5%; 
+    margin-top: 54px;
+         
+}
+
+.Social{
+
+    height: 10%;
+    margin-left: 9%;
+    width: 87.5%;
+    margin-top: 54px;
+         
+}
+
+.Self{
+
+    height: 10%;
+    margin-left: 9%;
+    width: 87.5%;
+    margin-top: 54px;
+         
+}
+
+#last {
+    font-size: 10px;
+    margin-left: 53%;
+    margin-top: -12%;
+}
+.workb > h5, h3{
+    margin-top: 20px;
+    margin-left: 30px;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: bolder;
+    height: 3px;
+    font-size: 10px;
+}
+
+.workb  p {
+    font-size:26px;
+    color: white;
+    font-weight: bolder;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.workb h4 {
+    margin-bottom: 30px;
+    color: #bbbbbb;
+    margin-left: 30px;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    
+}
+}
+@media (max-width: 375px){
+    #h6 {
+        
+        margin: auto;
+        margin-bottom: 35%;
+        margin-right: -5%;
+    }
+}
+
+@media (max-width: 350px){
+#last {
+    font-size: 10px;
+    margin-left: 53%;
+    margin-top: -17%;
+    text-align: center; }
+}
